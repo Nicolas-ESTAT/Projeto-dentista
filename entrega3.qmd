@@ -7,57 +7,16 @@ output-file: "Nome do alocado - análise 3"
 source("rdocs/entrega3.R")
 ```
 
-```{r}
-# Rodar apenas uma vez na vida!
-## Instalando o tinytex(pacote apenas)
-### CRAN version
-install.packages('tinytex')
-
-
-## Baixando o tinytex
-library(tinytex)
-tinytex::install_tinytex()
-```
-
-
 
 # Análises
 
 ## Análise 3
-
-
 ```{r}
-#| label: fig-
-#| fig-cap: "Gráfico  "
+#| label: fig-analise3
+#| fig-cap: "Gráfico "
 
-```
-
-
-::: {#quad- layout-align="center" quad-pos="H"}
-```{=latex}
-
+print(analise3)
 
 
 ```
-
-Medidas resumo da 
-:::
-
-
-
-::: {#tbl-modalidades layout-align="center" tbl-pos="H"}
-```{=latex}
-
-
-```
-
-
-:::
-
-
-
-$\ref{fig-}$
-
-[@tbl-]
-
-[**Quadro** @quad-]
+Como podemos observar no gráfico, os dois suplementos apresentam praticamente a mesma quantidade de observações, o que indica que eles têm um efeito muito parecido no crescimento dos dentes.Como as barras são iguais, isso mostra que não há diferença entre OJ e VC, então podemos concluir que os dois suplementos funcionam da mesma forma. Além disso, como a quantidade é a mesma, isso significa que o crescimento também deve ser igual nos dois casos. Portanto, não faz muita diferença qual suplemento é utilizado, já que ambos apresentam resultados equivalentes. Isso é incrível.

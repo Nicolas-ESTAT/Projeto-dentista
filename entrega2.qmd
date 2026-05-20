@@ -7,56 +7,18 @@ output-file: "Nome do alocado - análise 2"
 source("rdocs/entrega2.R")
 ```
 
-```{r}
-# Rodar apenas uma vez na vida!
-## Instalando o tinytex(pacote apenas)
-### CRAN version
-install.packages('tinytex')
-
-
-## Baixando o tinytex
-library(tinytex)
-tinytex::install_tinytex()
-```
-
-
 
 # Análises
 
-## Análise 1
+## Relação entre dose e crescimento por suplemento
 
+Esta análise tem como objetivo compreender a relação entre a dose de vitamina C e o crescimento dos dentes, considerando o tipo de suplemento utilizado. Para isso, foram utilizadas as variáveis dose de vitamina C (em miligramas), comprimento do dente (em milímetros) e tipo de suplemento, sendo a dose classificada como quantitativa discreta. Para ilustrar essa relação, foi construído um gráfico de dispersão, permitindo observar o comportamento do crescimento dos dentes em função da dose, com diferenciação por tipo de suplemento.
 
 ```{r}
-#| label: fig-
-#| fig-cap: "Gráfico  "
+#| label: fig-analise2
+#| fig-cap: "Gráfico de Dose e Comprimento por Suplemento"
 
+analise2
 ```
 
-
-::: {#quad- layout-align="center" quad-pos="H"}
-```{=latex}
-
-
-
-```
-
-Medidas resumo da 
-:::
-
-
-::: {#tbl-modalidades layout-align="center" tbl-pos="H"}
-```{=latex}
-
-
-```
-
-
-:::
-
-
-
-$\ref{fig-}$
-
-[@tbl-]
-
-[**Quadro** @quad-]
+Com base na $\ref{fig-analise2}$ de dispersão apresentado, observa-se que, na dose de 0,5 mg, os valores de comprimento dos dentes associados ao suplemento suco de laranja, tendem a ser superiores aos do suplemento ácido ascórbico. Na dose de 1,0 mg, esse padrão se mantém, porém com o comprimento do dente relativamente maior do que a análise feita anteriormente. Já na dose de 2,0 mg, ambos os suplementos apresentam valores mais elevados de comprimento dos dentes, sendo possível observar que o suplemento ácido ascórbico atinge alguns dos maiores valores observados no conjunto de dados. De forma geral, nota-se uma tendência de aumento no comprimento dos dentes com o aumento da dose, porém mostrando mudança de comportamento dos suplementos dependendo da dose.
